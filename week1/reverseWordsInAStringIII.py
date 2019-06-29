@@ -15,3 +15,13 @@ class Solution:
         # sp = " ".join(sp)
         # return sp
 
+"""
+Thought process:
+We need to reverse the words while maintining the original order,
+
+we can split the string into words, iterate through list of words 
+and reverse them using [::-1] and then join the string 
+
+or we can reverse the string first using [::-1], split the words 
+into a list, reverse the list order and then join 
+"""

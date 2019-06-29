@@ -14,5 +14,27 @@ class Solution:
             else:
                 count+=1  
         return max_gap
-            
-        
+
+"""
+Thought process:
+logic tests:
+1000
+0123
+101
+012
+
+111
+01
+		01
+			 0
+1100100
+01
+		0123
+						 01   
+						 
+when 1 and not seen,  set seen
+when 0, count+=1 
+when 1 and seen,  count+=1, calculate new max_gap 
+
+
+"""

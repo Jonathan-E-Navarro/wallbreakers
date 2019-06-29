@@ -25,4 +25,16 @@ class Solution:
                 digits.insert(0,1)
         
         return digits
-        
+
+"""
+Thought process:
+
+Maybe we can think about doing this just as we would by hand,
+we iterate from the right to left, add 1 to the least significant digit 
+and then move to the left handling carry digits if necessary. 
+
+Soooo, we itereate through list from left to right, and add 1 to LSD before 
+iteration begins, and then handle carry digits throughout iteration. 
+
+We can use mod10 to handle returning 9 -> 0 since 10mod10 = 0
+"""

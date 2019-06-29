@@ -22,3 +22,16 @@ class Solution:
             p2 = p2-1 if swap2 == 0 else p2
         s = "".join(s)
         return s
+
+"""
+Thought process:
+we want to reverse only the vowels of a string, what does this mean?
+
+From what I've seen with their examples, it appears that a reverse vowel mean this 
+if there is a vowel at s[0] and one at s[len-1], swap em and keep closing in from both sides
+
+This is screams two pointers to me 
+initalize one pointer at 0 and the other at len(str)-1
+so while the pointers have not crossed each other,
+if both pointers are currently pointing to a vowel, swap em 
+"""

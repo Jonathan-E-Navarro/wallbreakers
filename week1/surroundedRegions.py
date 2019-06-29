@@ -31,3 +31,17 @@ class Solution:
                     board[row][col] = 'O'
                 elif board[row][col] == 'O':
                     board[row][col] = 'X'
+
+"""
+Thought process:
+We are going to perform a DFS,
+Our dfs is going to modify every O that can be reached by another O
+if not within boundary or on boundary or not a zero, return
+changed every 0 that can be touched by a DFS to a *     
+iterate through board and call DFS when appropriate    
+every O seen at this point could not be reached through another O 
+so its a surrounded region, flip it to x            
+every * can be flipped back to a 0 since it was not surrounded by X's
+
+
+"""

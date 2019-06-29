@@ -30,3 +30,14 @@ class Solution:
                         count += 1
         return count
         
+"""
+Thought process:
+Lets try DFS
+
+go through the grid and when a piece of 
+land is encountered that is unvisited, we DFS until we run out of unvisited land 
+and return true
+
+every time true is returned by DFS , this indicates that an island has 
+been explored and so we therefore add 1 to our island counter.
+"""

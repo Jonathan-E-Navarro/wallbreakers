@@ -15,4 +15,11 @@ class Solution:
         else:
             return False
             
-        
+"""
+Thought process:
+For creating multiple counts with neat quick lookup, nice membership 
+testing features, I like to use a hashmap or in python's case, a dictionary.
+
+we iterate through both strings and add their char counts to their 
+respective dictionaries and then compare the two.
+"""

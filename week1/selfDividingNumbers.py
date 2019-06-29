@@ -19,7 +19,16 @@ class Solution:
             valid = 0 
         #return result list
         return result
-            
+
+"""
+Thought process: We need to find a way to for each number, 
+divide said number by every one of its digits (if does not contain zeroes) 
+and produces no remainder, making it a self dividing number 
+
+
+We can iterate through our list of numbers:
+for each number, we iterate through its digits and see if the aforementioned tests hold.
+"""      
                     
                 
         
